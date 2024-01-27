@@ -16,7 +16,7 @@ const port = process.env.PORT
 
 app.get("/", async (req, res) => {
   res.json({
-    message: "I am running agian",
+    message: "Server is running",
   })
 })
 
