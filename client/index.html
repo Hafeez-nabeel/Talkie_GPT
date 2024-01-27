@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./main.css">
+  <title>Talkie GPT</title>
+</head>
+
+<body>
+  <div id="app" class="bg-slate-600 w-screen h-screen flex flex-col  justify-between">
+    <div id="chat-container"
+      class="w-full h-full flex flex-col gap-2 pb-5 flex-1 overflow-y-scroll scrollbar-none scroll-smooth">
+    </div>
+    <form class="flex gap-10 w-full max-w-[1280px] my-0 mx-auto p-2 bg-slate-800">
+      <textarea class="w-full text-white p-2 bg-transparent rounded outline-none border-none" name="prompt" cols="1"
+        rows="1" placeholder="Ask me Anything.."></textarea>
+      <button type="submit" class="outline-none border-none cursor-pointer bg-transparent"><img class="
+        w-7 h-7" src="/assets/send.svg" alt="buttonlogo"></button>
+    </form>
+  </div>
+  <script type="module" src="/index.js"></script>
+</body>
+
+</html>

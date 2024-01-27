@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100;300;400;500;700;800;900&display=swap");
+body {
+  font-family: "Alegreya Sans", sans-serif;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .scroll-flow {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+  }
+  .wrapper {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .ai {
+    background: #40414f;
+  }
+
+  .chat {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .profile {
+    width: 36px;
+    height: 36px;
+    border-radius: 5px;
+
+    background: #5436da;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .ai .profile {
+    background: #10a37f;
+  }
+
+  .profile img {
+    width: 60%;
+    height: 60%;
+    object-fit: contain;
+  }
+
+  .message {
+    flex: 1;
+
+    color: #dcdcdc;
+    font-size: 20px;
+
+    max-width: 100%;
+    overflow-x: scroll;
+
+    white-space: pre-wrap;
+
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  /* hides scrollbar */
+  .message::-webkit-scrollbar {
+    display: none;
+  }
+}
