@@ -10,6 +10,7 @@ const openai = new OpenAI({
 
 const app = express()
 
+//cors policy
 app.use(cors())
 app.use(express.json())
 const port = process.env.PORT
