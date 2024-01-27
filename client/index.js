@@ -72,7 +72,7 @@ const handleSubmit = async (e) => {
   loader(messageDiv)
 
   // sending request to server API to fetch message from openAi
-  const response = await fetch(`http://localhost:8000`, {
+  const response = await fetch(`http://localhost:3000`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
