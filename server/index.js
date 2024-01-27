@@ -19,7 +19,6 @@ app.get("/", async (req, res) => {
     message: "I am running agian",
   })
 })
-// console.log("1:....")
 
 app.post("/", async (req, res) => {
   try {
