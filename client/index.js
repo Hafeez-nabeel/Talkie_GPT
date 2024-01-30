@@ -72,6 +72,7 @@ const handleSubmit = async (e) => {
   loader(messageDiv)
 
   // sending request to server API to fetch message from openAi
+
   const response = await fetch(import.meta.env.VITE_SERVER_URL, {
     method: "POST",
     headers: {
@@ -87,6 +88,7 @@ const handleSubmit = async (e) => {
   messageDiv.innerHTML = ""
 
   if (response.ok) {
+    console.log(response)
     const data = await response.json()
     const parseData = data.bot.content
     typeText(messageDiv, parseData)
